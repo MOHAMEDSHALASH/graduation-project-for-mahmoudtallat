@@ -1,0 +1,176 @@
+.cart_page .title_cart{
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-radius: 50%;
+    span{
+        color: var(--main-color);
+        margin: 0 15px;
+        font-size: 50px;
+    }
+}
+
+.cart_page .container_cart{
+    padding: 30px;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 20px;
+    min-height: calc(100vh - 300px);
+}
+/* ==================================
+ RIGHT
+===================================*/
+.cart_page .container_cart .right{
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 5px #00000020;
+    border-radius: 10px;
+    font-size: 18px;
+    position: sticky;
+    top: 80px;
+}
+.cart_page .container_cart .right section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+    &:last-child{
+        border: none;
+    }
+}
+.cart_page .container_cart .right section .count{
+    color: var(--main-color);
+}
+.cart_page .container_cart .right section sub{
+    color: #f00;
+}
+.cart_page .container_cart .right button{
+    padding: 12px ;
+    width: 100%;
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: .5s;
+    &:hover{
+        letter-spacing: 1px;
+    }
+}
+/* ==================================
+ LEFT
+===================================*/
+.cart_page .container_cart .left{
+    flex: 1;
+}
+.cart_page .container_cart .left section{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00000020;
+    border-radius: 10px;
+    margin-bottom: 20px ;
+}
+.cart_page .container_cart .left section .image{
+    width: 200px;
+    height: 200px;
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.cart_page .container_cart .left section .operators{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0;
+    user-select: none;
+}
+.cart_page .container_cart .left section .counter{
+    gap: 3px;
+}
+.cart_page .container_cart .left section .counter p{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        background-color: var(--main-color);
+        color: #fff;
+    }
+}
+.cart_page .container_cart .left section .counter p.count{
+    pointer-events: none;
+}
+.cart_page .container_cart .left section .delete{
+    height: 40px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #f3f3f3;
+    border: none;
+    outline: none;
+    transition: .3s;
+    &:hover{
+        background-color: #f00;
+        color: #fff;
+    }
+}
+.cart_page .container_cart .left .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    font-size: 18px;
+}
+.cart_page .container_cart .left .price .total{
+    font-weight: bold;
+    color: var(--main-color);
+    span{
+        color: #f00;
+        margin: 0 4px;
+    }
+}
+.cart_page .container_cart .left .no_data{
+    text-align: center;
+    margin: 100px 0;
+}
+/* ==================================
+ RESPONSIVE STYLE
+===================================*/
+@media(max-width:900px){
+    .cart_page .container_cart{
+        flex-direction: column-reverse;
+    }
+    .cart_page .container_cart .left,
+    .cart_page .container_cart .right{
+        width: 100%;
+    }
+    .cart_page .container_cart .left .no_data{
+    }
+}
+@media(max-width:600px){
+    .cart_page .container_cart .left section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+        text-align: center;
+    }
+}

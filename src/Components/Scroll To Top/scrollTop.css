@@ -1,0 +1,25 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* تأكد من أن الزر يظهر فوق أي محتوى آخر */
+  }
+  
+  .scroll-to-top-button {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out;
+  }
+  
+  .scroll-to-top-button:hover {
+    background-color: #0cc984;
+  }
+  

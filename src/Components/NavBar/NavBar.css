@@ -1,0 +1,132 @@
+header{
+    justify-content: space-between !important;
+    padding: 0 30px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #00000020;
+    position: sticky;
+    top: .1px;
+    z-index: 10000;
+}
+header .menu{
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 7px 4px;
+    cursor: pointer;
+    display: none;
+    transition: .3s
+}
+header .menu:hover span{
+    background-color: var(--main-color);
+}
+header .menu span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #777;
+    transition: .3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+header .menu_close{
+    justify-content: center;
+}
+header .menu_close span:nth-child(odd){
+    width: 0;
+}
+header .menu_close span:nth-child(2){
+    transform: rotate(45deg);
+}
+header .menu_close span:nth-child(4){
+    transform: rotate(-45deg);
+}
+header ul{
+    list-style: none;
+    gap: 10px;
+}
+header ul.links a{
+    border-radius: 10px;
+    transition: .5s;
+    padding: 5px;
+    transition: .5s;
+    &:hover{
+        color: var(--main-color);
+    }
+}
+header ul.links a.active{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px 15px ;
+}
+header ul.icons a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+    color: #777;
+    font-size: 24px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    &:hover{
+        font-size: 28px;
+        color: #fff;
+    }
+    &.icon_cart:hover{
+        background-color: var(--main-color);
+    }
+    &.icon_fav:hover{
+        background-color: #f00;
+    }
+    &.icon_sign:hover{
+        background-color: #0075ff;
+    }
+}
+header ul.icons li{
+    position: relative;
+}
+header ul.icons li .count{
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    min-width: 22px;
+    height: 22px;
+    padding: 4px;
+    color: #fff;
+    background-color: brown;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ================================
+ RESPONSIVE STYLE
+==================================*/
+
+@media(max-width:750px){
+    header .menu{
+        display: flex;
+    }
+    header ul.links{
+        position: absolute;
+        flex-direction: column;
+        background-color: #fff;
+        right: -270px;
+        top: 70px;
+        box-shadow: 0 10px 10px #00000020;
+        height: calc(100vh - 70px);
+        width: 250px;
+        gap: 20px;
+        transition: .5s;
+    }
+    header ul.links_show{
+        right: 0;
+    }
+}

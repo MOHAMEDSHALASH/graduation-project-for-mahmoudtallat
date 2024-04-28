@@ -1,0 +1,23 @@
+[
+    {
+        "quastion":"yes نعم help ساعدني ",
+        "answer":"hello , how can i help you my friend please give some information about you need ..."
+    },
+    {
+        "quastion":"what is lion",
+        "answer":"lion is a danger animales and eat only meat .",
+        "URLlink":"https://en.wikipedia.org/wiki/Lion"
+    },
+    {
+        "quastion":"what is donkey",
+        "answer":"donkey is a fast animales and eat green food"
+    },
+    {
+        "quastion":"hi hello welcome مرحبا اهلا",
+        "answer":"مرحبا صديقي كيف يمكنني مساعدتك ؟ "
+    },
+    {
+        "quastion":"شاي المليسة",
+        "answer":"عشبة المورينجا، المعروفة أيضًا بـ”شجرة العشاء” أو “شجرة العسل”، هي نبات يعود أصله إلى جنوب آسيا، وقد اكتسبت شهرة عالمية بفضل فوائدها الصحية المذهلة. تعتبر المورينجا واحدة من أكثر النباتات تنوعًا وفوائدًا في عالم الأعشاب والنباتات الطبية. إذا كنت تتساءل عن ما تحمله عشبة المورينجا بالنسبة لك، فستكتشف أن هذا النبات الرائع يحمل في طياته الكثير من الخير للصحة والعافية"
+    }
+]

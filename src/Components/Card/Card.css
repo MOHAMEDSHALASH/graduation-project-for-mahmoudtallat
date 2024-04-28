@@ -1,0 +1,86 @@
+
+.card{
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 0 10px #00000020;
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between !important;
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    text-align: center;
+    margin: 10px 0;
+}
+.card nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px ;
+    border: 1px solid #ccc;
+    border-width: 1px 0 ;
+    padding: 8px;
+    width: 100%;
+}
+.card nav .price{
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--main-color);
+}
+.card nav .star{
+    gap: 5px;
+    .icon{
+        color: goldenrod;
+    }
+}
+.card button{
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: .5s;
+    &:hover{
+        background-color: #fff;
+        color: var(--main-color);
+        letter-spacing: 1px;
+    }
+}
+
+.card .overlay{
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    transition: .5s;
+}
+.card .overlay .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #777;
+    box-shadow: 0 0 10px #00000020;
+    cursor: pointer;
+}
+.card:hover .overlay{
+    right: 15px;
+}
+.card:hover{
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.389);
+}
