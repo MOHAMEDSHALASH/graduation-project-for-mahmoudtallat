@@ -17,7 +17,14 @@ export default function Register() {
   </div>
   <div className="main">
     <h3>Create Account</h3>
-    <div className="icon">معنديش نت والله</div>
+    <div className="icon flex">
+      <div className='goolge'>
+        <img src={require("../../images/icons/google (2).png")} alt="" />
+      </div>
+      <div className='facebook'>
+        <img src={require("../../images/icons/facebook (1).png")} alt="" />
+      </div>
+    </div>
     <p className="or">or</p>
     <form action="">
       <input
