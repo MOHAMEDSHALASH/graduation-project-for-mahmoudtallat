@@ -14,6 +14,7 @@ import OilProducts from './pages/ProductsPages/OilProducts';
 import HoneyProducts from './pages/ProductsPages/HoneyProducts';
 import HerbalProducts from './pages/ProductsPages/HerbalProducts';
 import Cart from './pages/Cart/Cart';
+import Register from './pages/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <Cart />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 ]);
 

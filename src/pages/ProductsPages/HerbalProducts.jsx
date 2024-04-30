@@ -1,5 +1,5 @@
 
-import { herbalData } from "../../ddd/constant";
+import { herbalData } from "../../data2/data";
 
 
 import React, { useState } from 'react'
@@ -49,7 +49,7 @@ export default function HerbalProducts() {
                   <Card 
                   key={i}
                   id={val.id}
-                  image={val.Image}
+                  image={val.image}
                   title={val.title}
                   price={val.price}
                   />

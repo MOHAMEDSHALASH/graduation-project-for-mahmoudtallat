@@ -10,7 +10,7 @@ export default function Card(props) {
   function addToCart(item){
     const product={
         id:item.id+item.title,
-        image: "/static/media/عسل حبة البركه.7cf6cd89f8049435d0e7.jpg",
+        image: item.image,
         name: item.title,
         price:item.price,
         count:1,
@@ -27,14 +27,13 @@ export default function Card(props) {
     // reset our filds
   }
 
-  
   return (
     <div className="card flex">
     <div className="overlay">
       <div className="icon"><FaHeart /></div>
     </div>
 
-    <img src={require("../../images/products/honey images/عسل حبة البركه.jpg")} alt="" />
+    <img src={props.image} alt="" />
     <h3 className="title">{props.title}</h3>
 
     <nav>

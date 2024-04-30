@@ -64,7 +64,7 @@ export default function NavBar() {
                 <div className='count'>0</div>
                 <NavLink className="icon_fav" to=""><IoMdHeart /></NavLink>
             </li>
-            <li onClick={()=>{Scroll()}}><NavLink className="icon_sign" to=""><IoLogIn /></NavLink></li>
+            <li onClick={()=>{Scroll()}}><NavLink className="icon_sign" to="/register"><IoLogIn /></NavLink></li>
         </ul>
     </header>
   )
